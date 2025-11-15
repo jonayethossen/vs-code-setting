@@ -1,0 +1,103 @@
+{
+  // ================= EDITOR =================
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 20,
+  "editor.lineHeight": 2,
+  "editor.fontWeight": "500",
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ================= WORKBENCH =================
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
+  "workbench.settings.editor": "json",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+
+  // Window
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "windowed",
+
+  // ================= EXPLORER =================
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  // ================= GIT / PROJECT MANAGER =================
+  "projectManager.git.baseFolders": ["$home/workspace"],
+  "projectManager.sortList": "Recent",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+
+  // ================= TERMINAL =================
+  "terminal.integrated.fontFamily": "Lilex Nerd Font",
+  "terminal.integrated.fontSize": 19,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  // "terminal.integrated.scrollback": 50,
+
+  // ================= VIM SETTINGS =================
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+
+  // Keybindings
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+
+  // ================= LANGUAGE FORMATTER =================
+  "[java, python, javascript, c]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ================= EMMET SETTINGS =================
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "javascriptreact": "javascriptreact",
+    "typescriptreact": "typescriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascriptreact": "jsx",
+    "typescriptreact": "tsx"
+  },
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.preferences": {
+    "filter.commentAfter": " "
+  }
+}
